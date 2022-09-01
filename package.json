@@ -1,0 +1,32 @@
+{
+  "name": "speer",
+  "version": "1.0.0",
+  "description": "Social Media APi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "jest": "jest"
+  },
+  "author": "Rushita Patel",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "chalk": "^4.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.4",
+    "morgan": "^1.10.0",
+    "pino": "^8.4.2",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.1",
+    "nodemon": "^2.0.19",
+    "supertest": "^6.2.4"
+  }
+}

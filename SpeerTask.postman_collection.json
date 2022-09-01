@@ -1,0 +1,453 @@
+{
+	"info": {
+		"_postman_id": "4eee7fe2-c2e5-4b1f-814d-99994bb9b79e",
+		"name": "SpeerTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Tweet",
+			"item": [
+				{
+					"name": "Create Tweet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTA3YWYzZGEwZjdiZWUxMTMwYTQzOCIsImlhdCI6MTY2MjAyNDYzNywiZXhwIjoxNjYyMTU0MjM3fQ.UqSZz7bhuKNdjIiEHTNfOUdWCUTO5jS1kATHWI7eFxs",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\": \"Hello Tweet\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/tweet/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"tweet",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Tweet By Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTA3YWYzZGEwZjdiZWUxMTMwYTQzOCIsImlhdCI6MTY2MjAyNDYzNywiZXhwIjoxNjYyMTU0MjM3fQ.UqSZz7bhuKNdjIiEHTNfOUdWCUTO5jS1kATHWI7eFxs",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/tweet/6310862e09d336fbc72483af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"tweet",
+								"6310862e09d336fbc72483af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Tweet",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTA3YWYzZGEwZjdiZWUxMTMwYTQzOCIsImlhdCI6MTY2MjAyNDYzNywiZXhwIjoxNjYyMTU0MjM3fQ.UqSZz7bhuKNdjIiEHTNfOUdWCUTO5jS1kATHWI7eFxs",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/tweet/63107c3a88f3ec85aecea023",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"tweet",
+								"63107c3a88f3ec85aecea023"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Tweets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTA3YWYzZGEwZjdiZWUxMTMwYTQzOCIsImlhdCI6MTY2MjAyNDYzNywiZXhwIjoxNjYyMTU0MjM3fQ.UqSZz7bhuKNdjIiEHTNfOUdWCUTO5jS1kATHWI7eFxs",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/tweet?page=1&limit=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"tweet"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Tweet By User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTA3YWYzZGEwZjdiZWUxMTMwYTQzOCIsImlhdCI6MTY2MjAyNDYzNywiZXhwIjoxNjYyMTU0MjM3fQ.UqSZz7bhuKNdjIiEHTNfOUdWCUTO5jS1kATHWI7eFxs",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/tweet/usertweet?page=1&limit=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"tweet",
+								"usertweet"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Tweet",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTA3YWYzZGEwZjdiZWUxMTMwYTQzOCIsImlhdCI6MTY2MjAyNDYzNywiZXhwIjoxNjYyMTU0MjM3fQ.UqSZz7bhuKNdjIiEHTNfOUdWCUTO5jS1kATHWI7eFxs",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\" : \"Update Tweet\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/tweet/6310862e09d336fbc72483af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"tweet",
+								"6310862e09d336fbc72483af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like Tweet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTA3YWYzZGEwZjdiZWUxMTMwYTQzOCIsImlhdCI6MTY2MjAyNDYzNywiZXhwIjoxNjYyMTU0MjM3fQ.UqSZz7bhuKNdjIiEHTNfOUdWCUTO5jS1kATHWI7eFxs",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/tweet/like/6310862e09d336fbc72483af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"tweet",
+								"like",
+								"6310862e09d336fbc72483af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Unlike Tweet",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTA3YWYzZGEwZjdiZWUxMTMwYTQzOCIsImlhdCI6MTY2MjAyNDYzNywiZXhwIjoxNjYyMTU0MjM3fQ.UqSZz7bhuKNdjIiEHTNfOUdWCUTO5jS1kATHWI7eFxs",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/tweet/like/6310862e09d336fbc72483af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"tweet",
+								"like",
+								"6310862e09d336fbc72483af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Retweet Tweet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTA3YWYzZGEwZjdiZWUxMTMwYTQzOCIsImlhdCI6MTY2MjAyNDYzNywiZXhwIjoxNjYyMTU0MjM3fQ.UqSZz7bhuKNdjIiEHTNfOUdWCUTO5jS1kATHWI7eFxs",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/tweet/tweet/6310862e09d336fbc72483af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"tweet",
+								"tweet",
+								"6310862e09d336fbc72483af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Untweet Tweet",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTA3YWYzZGEwZjdiZWUxMTMwYTQzOCIsImlhdCI6MTY2MjAyNDYzNywiZXhwIjoxNjYyMTU0MjM3fQ.UqSZz7bhuKNdjIiEHTNfOUdWCUTO5jS1kATHWI7eFxs",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/v1/tweet/tweet/6310862e09d336fbc72483af",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"tweet",
+								"tweet",
+								"6310862e09d336fbc72483af"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reply Tweet",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTA3YWYzZGEwZjdiZWUxMTMwYTQzOCIsImlhdCI6MTY2MjAyNDYzNywiZXhwIjoxNjYyMTU0MjM3fQ.UqSZz7bhuKNdjIiEHTNfOUdWCUTO5jS1kATHWI7eFxs",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\": \"Hello Tweet\",\n    \"replyTo\": \"6310a5cc6b23f4566a615cb0\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/tweet/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"tweet",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"aryanr\",\n    \"password\": \"aryanr\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"aryan\",\n    \"email\": \"demo2@gmail.com\",\n    \"username\": \"aryanr\",\n    \"phone\": \"9787878788\",\n    \"password\": \"aryanr\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Server Test",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
