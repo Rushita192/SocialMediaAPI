@@ -3,7 +3,7 @@
 Created by Rushita Patel
 
 NOTE: install packges by using "npm install".
-      Add your Mongo_DB_URI to run the command.
+      Add your Mongo_DB_URI to run the code.
 
 1. SocialMediaAPI has src folder which follows the MVC pattern.
 
